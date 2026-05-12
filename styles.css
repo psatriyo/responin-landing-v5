@@ -67,6 +67,7 @@ summary {
   position: sticky;
   top: 0;
   z-index: 20;
+  isolation: isolate;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -74,7 +75,22 @@ summary {
   width: 100%;
   margin: 0;
   padding: 1rem max(1rem, calc((100% - 1180px) / 2));
+}
+
+.site-header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background: rgb(248 251 255 / 0.78);
   backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+
+.site-header > * {
+  position: relative;
+  z-index: 1;
 }
 
 .brand,
