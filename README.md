@@ -10,9 +10,11 @@ No Node.js, npm, Vite, or build step is required.
 
 ## Files
 
-- `index.html` — page structure and copy
+- `index.html` — page structure
 - `styles.css` — visual design and responsive layout
-- `script.js` — small smooth-scroll enhancement
+- `script.js` — smooth scrolling and language switching
+- `i18n/en.js` — English strings
+- `i18n/id.js` — Indonesian strings
 - `favicon.svg` — browser icon
 
 ## GitHub Pages
