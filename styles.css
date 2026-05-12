@@ -71,9 +71,9 @@ summary {
   align-items: center;
   justify-content: space-between;
   gap: 1.5rem;
-  width: min(1180px, calc(100% - 2rem));
-  margin: 0 auto;
-  padding: 1rem 0;
+  width: 100%;
+  margin: 0;
+  padding: 1rem max(1rem, calc((100% - 1180px) / 2));
   backdrop-filter: blur(18px);
 }
 
