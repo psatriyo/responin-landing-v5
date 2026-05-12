@@ -2,12 +2,217 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>responin-landing-v5</title>
+    <meta
+      name="description"
+      content="Responin is a managed AI operations agent that checks, drafts, routes, follows up, and escalates repetitive business workflows with human approval."
+    />
+    <title>Responin | AI Operations Partner</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Responin home">
+        <span class="brand__mark" aria-hidden="true">R</span>
+        <span>Responin</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#workflows">Workflows</a>
+        <a href="#process">How it works</a>
+        <a href="#trust">Trust</a>
+        <a href="#pilot">Pilot</a>
+      </nav>
+      <a class="button button--primary site-header__cta" href="#pilot">Start with one workflow</a>
+    </header>
+
+    <main>
+      <section class="hero-section" id="top" aria-labelledby="hero-title">
+        <div class="hero-section__content">
+          <p class="eyebrow">Managed AI operations for SMB teams</p>
+          <h1 id="hero-title">Stop being the operating system for your business.</h1>
+          <p class="hero-section__description">
+            Responin checks, drafts, routes, follows up, and escalates repeatable operational work while keeping sensitive decisions human-approved.
+          </p>
+          <div class="hero-section__actions" aria-label="Landing page calls to action">
+            <a class="button button--primary" href="#pilot">Start with one workflow</a>
+            <a class="button button--secondary" href="#process">See how it works</a>
+          </div>
+          <ul class="hero-section__proof" aria-label="Responin proof points">
+            <li>Workflow memory and context</li>
+            <li>Approval-first execution</li>
+            <li>Audit logs and usage controls</li>
+          </ul>
+        </div>
+
+        <div class="hero-panel" aria-label="Responin workflow preview">
+          <div class="hero-panel__bar" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </div>
+          <div class="hero-panel__body">
+            <p class="hero-panel__label">Today’s operations queue</p>
+            <div class="workflow-card workflow-card--active">
+              <span>Invoice follow-up draft</span>
+              <strong>Needs approval</strong>
+            </div>
+            <div class="workflow-card">
+              <span>Customer escalation triage</span>
+              <strong>Routed to owner</strong>
+            </div>
+            <div class="workflow-card">
+              <span>Daily business summary</span>
+              <strong>Ready</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="metric-strip" aria-label="Safe landing page metrics">
+          <article class="metric-card">
+            <strong>1</strong>
+            <span>messy workflow to start</span>
+            <p>Pilot one repeatable process, measure value, then expand.</p>
+          </article>
+          <article class="metric-card">
+            <strong>24/7</strong>
+            <span>scheduled monitoring</span>
+            <p>Event-triggered checks can run outside business hours.</p>
+          </article>
+          <article class="metric-card">
+            <strong>Human</strong>
+            <span>approval for sensitive actions</span>
+            <p>Customer-visible and high-risk actions stay controlled.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="problems" aria-labelledby="problems-title">
+        <div class="section__header">
+          <p class="eyebrow">The operating drag</p>
+          <h2 id="problems-title">Your best people are doing your least important work.</h2>
+          <p class="section__description">
+            Responin is built for teams where business context is scattered across chats, spreadsheets, dashboards, and human memory.
+          </p>
+        </div>
+        <div class="problem-grid">
+          <article class="card problem-card"><span>01</span><p>Owners manually check chats, spreadsheets, dashboards, and reports.</p></article>
+          <article class="card problem-card"><span>02</span><p>Follow-ups get delayed because process knowledge is scattered.</p></article>
+          <article class="card problem-card"><span>03</span><p>Routine admin work consumes the attention of your best people.</p></article>
+          <article class="card problem-card"><span>04</span><p>Scaling operations often means hiring coordinators instead of improving leverage.</p></article>
+        </div>
+      </section>
+
+      <section class="section section--muted" id="workflows" aria-labelledby="workflows-title">
+        <div class="section__header">
+          <p class="eyebrow">Product principles</p>
+          <h2 id="workflows-title">A reliable operations worker, not another chatbot.</h2>
+          <p class="section__description">
+            The system design docs point to three pillars: memory, action, and control.
+          </p>
+        </div>
+        <div class="pillar-grid">
+          <article class="card pillar-card">
+            <h3>Learns, doesn't just execute</h3>
+            <p>Builds useful business memory: people, processes, preferences, recurring exceptions, and workflow-specific context.</p>
+          </article>
+          <article class="card pillar-card">
+            <h3>Acts, doesn't just advise</h3>
+            <p>Moves repeatable work forward by checking systems, drafting responses, preparing updates, routing exceptions, and reporting outcomes.</p>
+          </article>
+          <article class="card pillar-card">
+            <h3>Safe, not reckless</h3>
+            <p>Uses approval rules, scoped memory, audit logs, and quota controls so automation improves operations without losing human judgment.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="process" aria-labelledby="process-title">
+        <div class="section__header">
+          <p class="eyebrow">How it works</p>
+          <h2 id="process-title">From trigger to approved action.</h2>
+          <p class="section__description">
+            Responin separates reasoning from system control: AI drafts and recommends; the platform authorizes, meters, executes, and logs.
+          </p>
+        </div>
+        <ol class="timeline">
+          <li class="timeline__item"><span>01</span><p>Customer channel or scheduled trigger</p></li>
+          <li class="timeline__item"><span>02</span><p>Workflow classification and context retrieval</p></li>
+          <li class="timeline__item"><span>03</span><p>Policy, quota, and model routing checks</p></li>
+          <li class="timeline__item"><span>04</span><p>AI reasoning, drafting, summarization, or recommendation</p></li>
+          <li class="timeline__item"><span>05</span><p>Human approval where required</p></li>
+          <li class="timeline__item"><span>06</span><p>Tool execution, audit log, and customer reporting</p></li>
+        </ol>
+      </section>
+
+      <section class="section section--muted" id="use-cases" aria-labelledby="use-cases-title">
+        <div class="section__header">
+          <p class="eyebrow">First workflows</p>
+          <h2 id="use-cases-title">Start narrow, prove value, then expand.</h2>
+          <p class="section__description">
+            Start with one repeatable workflow that can be measured and governed.
+          </p>
+        </div>
+        <div class="use-case-grid">
+          <article class="card use-case-card"><h3>Daily business summary</h3><p>Collects operational changes, flags exceptions, and gives managers the next actions that matter.</p></article>
+          <article class="card use-case-card"><h3>Customer escalation triage</h3><p>Classifies urgency, retrieves context, drafts a response, and routes risky cases for review.</p></article>
+          <article class="card use-case-card"><h3>Invoice and payment follow-up</h3><p>Prepares reminders and status updates while preserving approval gates for financial communication.</p></article>
+          <article class="card use-case-card"><h3>CRM or spreadsheet assistance</h3><p>Turns routine updates into reviewable actions so internal records stay current.</p></article>
+        </div>
+      </section>
+
+      <section class="section section--dark" id="trust" aria-labelledby="trust-title">
+        <div class="section__header">
+          <p class="eyebrow">Trust model</p>
+          <h2 id="trust-title">Sensitive actions stay human-approved, logged, and scoped.</h2>
+          <p class="section__description">
+            Responin avoids over-autonomy by making approval, memory boundaries, auditability, and usage controls part of the product story.
+          </p>
+        </div>
+        <ul class="trust-list">
+          <li>Human approval before customer-visible or high-risk actions</li>
+          <li>Scoped memory by customer, workspace, agent, and workflow</li>
+          <li>Audit logs for workflow runs, approvals, and tool calls</li>
+          <li>Quota and usage checks before model calls</li>
+          <li>Credential references instead of plaintext configuration</li>
+        </ul>
+      </section>
+
+      <section class="section" id="faq" aria-labelledby="faq-title">
+        <div class="section__header">
+          <p class="eyebrow">Buyer questions</p>
+          <h2 id="faq-title">Clear answers before the pilot starts.</h2>
+          <p class="section__description">
+            Conservative answers aligned with the system design guardrails.
+          </p>
+        </div>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary>Is Responin just ChatGPT?</summary>
+            <p>No. Responin is positioned as a managed operations layer with workflow context, memory, integrations, approval rules, metering, and auditability.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Will it message customers without approval?</summary>
+            <p>Sensitive or customer-visible actions should require approval in the MVP. Responin can draft and recommend, while humans approve important decisions.</p>
+          </details>
+          <details class="faq-item">
+            <summary>What should a business automate first?</summary>
+            <p>Start with one repeatable, measurable workflow such as daily summaries, escalation triage, payment follow-up, or order/status monitoring.</p>
+          </details>
+        </div>
+      </section>
+
+      <section class="pilot-cta" id="pilot" aria-labelledby="pilot-title">
+        <p class="eyebrow">30-day pilot motion</p>
+        <h2 id="pilot-title">Pick one messy workflow. Make it measurable.</h2>
+        <p>
+          Responin is designed to start with a focused operational workflow, report what changed, and expand only after the business case is clear.
+        </p>
+        <div class="hero-section__actions">
+          <a class="button button--primary" href="mailto:hello@responin.ai?subject=Responin%20workflow%20pilot">Start a workflow pilot</a>
+          <a class="button button--secondary" href="https://github.com/psatriyo/responin-system-design" target="_blank" rel="noreferrer">Review system design</a>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
   </body>
 </html>
