@@ -1,32 +1,29 @@
 # Responin Landing V5
 
-A responsive React + TypeScript landing page for Responin, derived from the [`psatriyo/responin-system-design`](https://github.com/psatriyo/responin-system-design) documentation.
+A plain HTML/CSS/JS landing page for Responin, derived from the [`psatriyo/responin-system-design`](https://github.com/psatriyo/responin-system-design) documentation.
 
-## Stack
+## How to open locally
 
-- Vite
-- React 19
-- TypeScript
-- Tailwind CSS v4 via `@tailwindcss/vite`
-- Vitest + Testing Library
-- ESLint + Prettier
+Double-click `index.html`, or right-click it and choose **Open With → Browser**.
 
-## Local development
+No Node.js, npm, Vite, or build step is required.
 
-```bash
-npm install
-npm run dev
-```
+## Files
 
-## Quality gates
+- `index.html` — page structure and copy
+- `styles.css` — visual design and responsive layout
+- `script.js` — small smooth-scroll enhancement
+- `favicon.svg` — browser icon
 
-```bash
-npm run format
-npm run lint
-npm run test
-npm run build
-```
+## GitHub Pages
 
-## Design system interpretation
+This repo can be deployed directly with GitHub Pages by serving the repository root.
 
-The source design-system repository is documentation-only. This implementation translates its product strategy into landing-page sections, copy constants, safe claims, trust guardrails, and a plain-text Responin brand treatment.
+## Source messaging
+
+The landing page follows the Responin system-design positioning:
+
+- managed AI operations for growing teams
+- starts with one workflow
+- remembers context, acts safely, and keeps humans in control
+- avoids absolute privacy or unsupported autonomy claims
