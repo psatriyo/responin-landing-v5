@@ -1,214 +1,221 @@
 <!doctype html>
-<html lang="en">
+<html lang="id">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Responin is a managed AI operations agent that checks, drafts, routes, follows up, and escalates repetitive business workflows with human approval."
+      content="Responin adalah agen operasional AI terkelola yang memeriksa, menyusun draf, mengarahkan, menindaklanjuti, dan mengeskalasi alur kerja bisnis berulang dengan persetujuan manusia."
+      data-i18n-meta="description"
     />
-    <title>Responin | AI Operations Partner</title>
+    <title data-i18n-title>Responin | Partner Operasional AI</title>
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="#top" aria-label="Responin home">
+      <a class="brand" href="#top" aria-label="Beranda Responin" data-i18n-attr="aria-label:brand.home">
         <span class="brand__mark" aria-hidden="true">R</span>
         <span>Responin</span>
       </a>
-      <nav class="site-nav" aria-label="Primary navigation">
-        <a href="#workflows">Workflows</a>
-        <a href="#process">How it works</a>
-        <a href="#trust">Trust</a>
-        <a href="#pilot">Pilot</a>
+      <nav class="site-nav" aria-label="Navigasi utama" data-i18n-attr="aria-label:nav.primary">
+        <a href="#workflows" data-i18n="nav.workflows">Alur kerja</a>
+        <a href="#process" data-i18n="nav.process">Cara kerja</a>
+        <a href="#trust" data-i18n="nav.trust">Kepercayaan</a>
+        <a href="#pilot" data-i18n="nav.pilot">Pilot</a>
       </nav>
-      <a class="button button--primary site-header__cta" href="#pilot">Start with one workflow</a>
+      <div class="site-header__actions">
+        <div class="language-switcher" aria-label="Pilih bahasa" data-i18n-attr="aria-label:language.label">
+          <button type="button" class="language-switcher__button" data-lang="id">ID</button>
+          <button type="button" class="language-switcher__button" data-lang="en">EN</button>
+        </div>
+        <a class="button button--primary site-header__cta" href="#pilot" data-i18n="cta.startOne">Mulai dari satu alur kerja</a>
+      </div>
     </header>
 
     <main>
       <section class="hero-section" id="top" aria-labelledby="hero-title">
         <div class="hero-section__content">
-          <p class="eyebrow">Managed AI operations for SMB teams</p>
-          <h1 id="hero-title">Stop being the operating system for your business.</h1>
-          <p class="hero-section__description">
-            Responin checks, drafts, routes, follows up, and escalates repeatable operational work while keeping sensitive decisions human-approved.
+          <p class="eyebrow" data-i18n="hero.eyebrow">Operasional AI terkelola untuk tim UKM</p>
+          <h1 id="hero-title" data-i18n="hero.title">Berhenti menjadi sistem operasi untuk bisnismu.</h1>
+          <p class="hero-section__description" data-i18n="hero.description">
+            Responin memeriksa, menyusun draf, mengarahkan, menindaklanjuti, dan mengeskalasi pekerjaan operasional berulang sambil memastikan keputusan sensitif tetap disetujui manusia.
           </p>
-          <div class="hero-section__actions" aria-label="Landing page calls to action">
-            <a class="button button--primary" href="#pilot">Start with one workflow</a>
-            <a class="button button--secondary" href="#process">See how it works</a>
+          <div class="hero-section__actions" aria-label="Ajakan bertindak halaman landing" data-i18n-attr="aria-label:hero.actionsLabel">
+            <a class="button button--primary" href="#pilot" data-i18n="cta.startOne">Mulai dari satu alur kerja</a>
+            <a class="button button--secondary" href="#process" data-i18n="cta.seeHow">Lihat cara kerjanya</a>
           </div>
-          <ul class="hero-section__proof" aria-label="Responin proof points">
-            <li>Workflow memory and context</li>
-            <li>Approval-first execution</li>
-            <li>Audit logs and usage controls</li>
+          <ul class="hero-section__proof" aria-label="Bukti keunggulan Responin" data-i18n-attr="aria-label:hero.proofLabel">
+            <li data-i18n="hero.proof.memory">Memori dan konteks alur kerja</li>
+            <li data-i18n="hero.proof.approval">Eksekusi berbasis persetujuan</li>
+            <li data-i18n="hero.proof.audit">Log audit dan kontrol penggunaan</li>
           </ul>
         </div>
 
-        <div class="hero-panel" aria-label="Responin workflow preview">
+        <div class="hero-panel" aria-label="Pratinjau alur kerja Responin" data-i18n-attr="aria-label:hero.panelLabel">
           <div class="hero-panel__bar" aria-hidden="true">
             <span></span><span></span><span></span>
           </div>
           <div class="hero-panel__body">
-            <p class="hero-panel__label">Today’s operations queue</p>
+            <p class="hero-panel__label" data-i18n="queue.label">Antrean operasional hari ini</p>
             <div class="workflow-card workflow-card--active">
-              <span>Invoice follow-up draft</span>
-              <strong>Needs approval</strong>
+              <span data-i18n="queue.invoice">Draf tindak lanjut invoice</span>
+              <strong data-i18n="queue.needsApproval">Perlu persetujuan</strong>
             </div>
             <div class="workflow-card">
-              <span>Customer escalation triage</span>
-              <strong>Routed to owner</strong>
+              <span data-i18n="queue.escalation">Triase eskalasi pelanggan</span>
+              <strong data-i18n="queue.routed">Diarahkan ke pemilik tugas</strong>
             </div>
             <div class="workflow-card">
-              <span>Daily business summary</span>
-              <strong>Ready</strong>
+              <span data-i18n="queue.summary">Ringkasan bisnis harian</span>
+              <strong data-i18n="queue.ready">Siap</strong>
             </div>
           </div>
         </div>
 
-        <div class="metric-strip" aria-label="Safe landing page metrics">
+        <div class="metric-strip" aria-label="Metrik aman halaman landing" data-i18n-attr="aria-label:metrics.label">
           <article class="metric-card">
             <strong>1</strong>
-            <span>messy workflow to start</span>
-            <p>Pilot one repeatable process, measure value, then expand.</p>
+            <span data-i18n="metrics.oneTitle">alur kerja berantakan untuk memulai</span>
+            <p data-i18n="metrics.oneBody">Uji satu proses berulang, ukur nilainya, lalu perluas.</p>
           </article>
           <article class="metric-card">
             <strong>24/7</strong>
-            <span>scheduled monitoring</span>
-            <p>Event-triggered checks can run outside business hours.</p>
+            <span data-i18n="metrics.monitoringTitle">pemantauan terjadwal</span>
+            <p data-i18n="metrics.monitoringBody">Pemeriksaan berbasis peristiwa bisa berjalan di luar jam kerja.</p>
           </article>
           <article class="metric-card">
-            <strong>Human</strong>
-            <span>approval for sensitive actions</span>
-            <p>Customer-visible and high-risk actions stay controlled.</p>
+            <strong data-i18n="metrics.human">Manusia</strong>
+            <span data-i18n="metrics.approvalTitle">menyetujui tindakan sensitif</span>
+            <p data-i18n="metrics.approvalBody">Tindakan yang terlihat pelanggan dan berisiko tinggi tetap terkendali.</p>
           </article>
         </div>
       </section>
 
       <section class="section" id="problems" aria-labelledby="problems-title">
         <div class="section__header">
-          <p class="eyebrow">The operating drag</p>
-          <h2 id="problems-title">Your best people are doing your least important work.</h2>
-          <p class="section__description">
-            Responin is built for teams where business context is scattered across chats, spreadsheets, dashboards, and human memory.
+          <p class="eyebrow" data-i18n="problems.eyebrow">Beban operasional</p>
+          <h2 id="problems-title" data-i18n="problems.title">Orang terbaikmu justru mengerjakan hal yang paling tidak penting.</h2>
+          <p class="section__description" data-i18n="problems.description">
+            Responin dibuat untuk tim yang konteks bisnisnya tersebar di chat, spreadsheet, dashboard, dan ingatan manusia.
           </p>
         </div>
         <div class="problem-grid">
-          <article class="card problem-card"><span>01</span><p>Owners manually check chats, spreadsheets, dashboards, and reports.</p></article>
-          <article class="card problem-card"><span>02</span><p>Follow-ups get delayed because process knowledge is scattered.</p></article>
-          <article class="card problem-card"><span>03</span><p>Routine admin work consumes the attention of your best people.</p></article>
-          <article class="card problem-card"><span>04</span><p>Scaling operations often means hiring coordinators instead of improving leverage.</p></article>
+          <article class="card problem-card"><span>01</span><p data-i18n="problems.one">Pemilik bisnis mengecek chat, spreadsheet, dashboard, dan laporan secara manual.</p></article>
+          <article class="card problem-card"><span>02</span><p data-i18n="problems.two">Tindak lanjut tertunda karena pengetahuan proses tersebar di banyak tempat.</p></article>
+          <article class="card problem-card"><span>03</span><p data-i18n="problems.three">Administrasi rutin menyita perhatian orang-orang terbaik di timmu.</p></article>
+          <article class="card problem-card"><span>04</span><p data-i18n="problems.four">Menaikkan skala operasional sering berarti menambah koordinator, bukan meningkatkan leverage.</p></article>
         </div>
       </section>
 
       <section class="section section--muted" id="workflows" aria-labelledby="workflows-title">
         <div class="section__header">
-          <p class="eyebrow">Product principles</p>
-          <h2 id="workflows-title">A reliable operations worker, not another chatbot.</h2>
-          <p class="section__description">
-            The system design docs point to three pillars: memory, action, and control.
+          <p class="eyebrow" data-i18n="principles.eyebrow">Prinsip produk</p>
+          <h2 id="workflows-title" data-i18n="principles.title">Pekerja operasional yang andal, bukan chatbot baru.</h2>
+          <p class="section__description" data-i18n="principles.description">
+            Dokumen desain sistem mengarah ke tiga pilar: memori, aksi, dan kontrol.
           </p>
         </div>
         <div class="pillar-grid">
           <article class="card pillar-card">
-            <h3>Learns, doesn't just execute</h3>
-            <p>Builds useful business memory: people, processes, preferences, recurring exceptions, and workflow-specific context.</p>
+            <h3 data-i18n="principles.learnTitle">Belajar, bukan sekadar mengeksekusi</h3>
+            <p data-i18n="principles.learnBody">Membangun memori bisnis yang berguna: orang, proses, preferensi, pengecualian berulang, dan konteks spesifik tiap alur kerja.</p>
           </article>
           <article class="card pillar-card">
-            <h3>Acts, doesn't just advise</h3>
-            <p>Moves repeatable work forward by checking systems, drafting responses, preparing updates, routing exceptions, and reporting outcomes.</p>
+            <h3 data-i18n="principles.actTitle">Bertindak, bukan sekadar memberi saran</h3>
+            <p data-i18n="principles.actBody">Mendorong pekerjaan berulang maju dengan memeriksa sistem, menyusun respons, menyiapkan update, mengarahkan pengecualian, dan melaporkan hasil.</p>
           </article>
           <article class="card pillar-card">
-            <h3>Safe, not reckless</h3>
-            <p>Uses approval rules, scoped memory, audit logs, and quota controls so automation improves operations without losing human judgment.</p>
+            <h3 data-i18n="principles.safeTitle">Aman, bukan gegabah</h3>
+            <p data-i18n="principles.safeBody">Menggunakan aturan persetujuan, memori terbatas ruang lingkup, log audit, dan kontrol kuota agar automasi memperbaiki operasional tanpa menghilangkan penilaian manusia.</p>
           </article>
         </div>
       </section>
 
       <section class="section" id="process" aria-labelledby="process-title">
         <div class="section__header">
-          <p class="eyebrow">How it works</p>
-          <h2 id="process-title">From trigger to approved action.</h2>
-          <p class="section__description">
-            Responin separates reasoning from system control: AI drafts and recommends; the platform authorizes, meters, executes, and logs.
+          <p class="eyebrow" data-i18n="process.eyebrow">Cara kerja</p>
+          <h2 id="process-title" data-i18n="process.title">Dari pemicu hingga aksi yang disetujui.</h2>
+          <p class="section__description" data-i18n="process.description">
+            Responin memisahkan penalaran dari kontrol sistem: AI menyusun draf dan rekomendasi; platform mengotorisasi, membatasi, mengeksekusi, dan mencatat.
           </p>
         </div>
         <ol class="timeline">
-          <li class="timeline__item"><span>01</span><p>Customer channel or scheduled trigger</p></li>
-          <li class="timeline__item"><span>02</span><p>Workflow classification and context retrieval</p></li>
-          <li class="timeline__item"><span>03</span><p>Policy, quota, and model routing checks</p></li>
-          <li class="timeline__item"><span>04</span><p>AI reasoning, drafting, summarization, or recommendation</p></li>
-          <li class="timeline__item"><span>05</span><p>Human approval where required</p></li>
-          <li class="timeline__item"><span>06</span><p>Tool execution, audit log, and customer reporting</p></li>
+          <li class="timeline__item"><span>01</span><p data-i18n="process.one">Channel pelanggan atau pemicu terjadwal</p></li>
+          <li class="timeline__item"><span>02</span><p data-i18n="process.two">Klasifikasi alur kerja dan pengambilan konteks</p></li>
+          <li class="timeline__item"><span>03</span><p data-i18n="process.three">Pemeriksaan kebijakan, kuota, dan pengarahan model</p></li>
+          <li class="timeline__item"><span>04</span><p data-i18n="process.four">Penalaran AI, penyusunan draf, ringkasan, atau rekomendasi</p></li>
+          <li class="timeline__item"><span>05</span><p data-i18n="process.five">Persetujuan manusia saat diperlukan</p></li>
+          <li class="timeline__item"><span>06</span><p data-i18n="process.six">Eksekusi alat, log audit, dan laporan ke pelanggan</p></li>
         </ol>
       </section>
 
       <section class="section section--muted" id="use-cases" aria-labelledby="use-cases-title">
         <div class="section__header">
-          <p class="eyebrow">First workflows</p>
-          <h2 id="use-cases-title">Start narrow, prove value, then expand.</h2>
-          <p class="section__description">
-            Start with one repeatable workflow that can be measured and governed.
+          <p class="eyebrow" data-i18n="useCases.eyebrow">Alur kerja pertama</p>
+          <h2 id="use-cases-title" data-i18n="useCases.title">Mulai sempit, buktikan nilainya, lalu perluas.</h2>
+          <p class="section__description" data-i18n="useCases.description">
+            Mulai dari satu alur kerja berulang yang bisa diukur dan dikendalikan.
           </p>
         </div>
         <div class="use-case-grid">
-          <article class="card use-case-card"><h3>Daily business summary</h3><p>Collects operational changes, flags exceptions, and gives managers the next actions that matter.</p></article>
-          <article class="card use-case-card"><h3>Customer escalation triage</h3><p>Classifies urgency, retrieves context, drafts a response, and routes risky cases for review.</p></article>
-          <article class="card use-case-card"><h3>Invoice and payment follow-up</h3><p>Prepares reminders and status updates while preserving approval gates for financial communication.</p></article>
-          <article class="card use-case-card"><h3>CRM or spreadsheet assistance</h3><p>Turns routine updates into reviewable actions so internal records stay current.</p></article>
+          <article class="card use-case-card"><h3 data-i18n="useCases.summaryTitle">Ringkasan bisnis harian</h3><p data-i18n="useCases.summaryBody">Mengumpulkan perubahan operasional, menandai pengecualian, dan memberi manajer aksi berikutnya yang paling penting.</p></article>
+          <article class="card use-case-card"><h3 data-i18n="useCases.escalationTitle">Triase eskalasi pelanggan</h3><p data-i18n="useCases.escalationBody">Mengklasifikasikan urgensi, mengambil konteks, menyusun respons, dan mengarahkan kasus berisiko untuk ditinjau.</p></article>
+          <article class="card use-case-card"><h3 data-i18n="useCases.invoiceTitle">Tindak lanjut invoice dan pembayaran</h3><p data-i18n="useCases.invoiceBody">Menyiapkan pengingat dan update status sambil menjaga gerbang persetujuan untuk komunikasi finansial.</p></article>
+          <article class="card use-case-card"><h3 data-i18n="useCases.crmTitle">Bantuan CRM atau spreadsheet</h3><p data-i18n="useCases.crmBody">Mengubah update rutin menjadi aksi yang bisa direview agar catatan internal tetap mutakhir.</p></article>
         </div>
       </section>
 
       <section class="section section--dark" id="trust" aria-labelledby="trust-title">
         <div class="section__header">
-          <p class="eyebrow">Trust model</p>
-          <h2 id="trust-title">Sensitive actions stay human-approved, logged, and scoped.</h2>
-          <p class="section__description">
-            Responin avoids over-autonomy by making approval, memory boundaries, auditability, and usage controls part of the product story.
+          <p class="eyebrow" data-i18n="trust.eyebrow">Model kepercayaan</p>
+          <h2 id="trust-title" data-i18n="trust.title">Tindakan sensitif tetap disetujui manusia, tercatat, dan dibatasi ruang lingkupnya.</h2>
+          <p class="section__description" data-i18n="trust.description">
+            Responin menghindari otonomi berlebihan dengan menjadikan persetujuan, batas memori, auditabilitas, dan kontrol penggunaan sebagai bagian dari cerita produk.
           </p>
         </div>
         <ul class="trust-list">
-          <li>Human approval before customer-visible or high-risk actions</li>
-          <li>Scoped memory by customer, workspace, agent, and workflow</li>
-          <li>Audit logs for workflow runs, approvals, and tool calls</li>
-          <li>Quota and usage checks before model calls</li>
-          <li>Credential references instead of plaintext configuration</li>
+          <li data-i18n="trust.one">Persetujuan manusia sebelum tindakan yang terlihat pelanggan atau berisiko tinggi</li>
+          <li data-i18n="trust.two">Memori dibatasi berdasarkan pelanggan, workspace, agen, dan alur kerja</li>
+          <li data-i18n="trust.three">Log audit untuk proses alur kerja, persetujuan, dan pemanggilan alat</li>
+          <li data-i18n="trust.four">Pemeriksaan kuota dan penggunaan sebelum pemanggilan model</li>
+          <li data-i18n="trust.five">Referensi kredensial, bukan konfigurasi teks polos</li>
         </ul>
       </section>
 
       <section class="section" id="faq" aria-labelledby="faq-title">
         <div class="section__header">
-          <p class="eyebrow">Buyer questions</p>
-          <h2 id="faq-title">Clear answers before the pilot starts.</h2>
-          <p class="section__description">
-            Conservative answers aligned with the system design guardrails.
+          <p class="eyebrow" data-i18n="faq.eyebrow">Pertanyaan pembeli</p>
+          <h2 id="faq-title" data-i18n="faq.title">Jawaban jelas sebelum pilot dimulai.</h2>
+          <p class="section__description" data-i18n="faq.description">
+            Jawaban konservatif yang selaras dengan batasan pengaman desain sistem.
           </p>
         </div>
         <div class="faq-list">
           <details class="faq-item">
-            <summary>Is Responin just ChatGPT?</summary>
-            <p>No. Responin is positioned as a managed operations layer with workflow context, memory, integrations, approval rules, metering, and auditability.</p>
+            <summary data-i18n="faq.chatgptQuestion">Apakah Responin hanya ChatGPT?</summary>
+            <p data-i18n="faq.chatgptAnswer">Tidak. Responin diposisikan sebagai lapisan operasional terkelola dengan konteks alur kerja, memori, integrasi, aturan persetujuan, pengukuran penggunaan, dan auditabilitas.</p>
           </details>
           <details class="faq-item">
-            <summary>Will it message customers without approval?</summary>
-            <p>Sensitive or customer-visible actions should require approval in the MVP. Responin can draft and recommend, while humans approve important decisions.</p>
+            <summary data-i18n="faq.approvalQuestion">Apakah Responin akan mengirim pesan ke pelanggan tanpa persetujuan?</summary>
+            <p data-i18n="faq.approvalAnswer">Tindakan sensitif atau yang terlihat pelanggan sebaiknya membutuhkan persetujuan di MVP. Responin bisa menyusun draf dan memberi rekomendasi, sementara manusia menyetujui keputusan penting.</p>
           </details>
           <details class="faq-item">
-            <summary>What should a business automate first?</summary>
-            <p>Start with one repeatable, measurable workflow such as daily summaries, escalation triage, payment follow-up, or order/status monitoring.</p>
+            <summary data-i18n="faq.firstQuestion">Apa yang sebaiknya diautomasi dulu oleh bisnis?</summary>
+            <p data-i18n="faq.firstAnswer">Mulai dari satu alur kerja yang berulang dan terukur, seperti ringkasan harian, triase eskalasi, tindak lanjut pembayaran, atau pemantauan order/status.</p>
           </details>
         </div>
       </section>
 
       <section class="pilot-cta" id="pilot" aria-labelledby="pilot-title">
-        <p class="eyebrow">30-day pilot motion</p>
-        <h2 id="pilot-title">Pick one messy workflow. Make it measurable.</h2>
-        <p>
-          Responin is designed to start with a focused operational workflow, report what changed, and expand only after the business case is clear.
+        <p class="eyebrow" data-i18n="pilot.eyebrow">Gerak pilot 30 hari</p>
+        <h2 id="pilot-title" data-i18n="pilot.title">Pilih satu alur kerja yang berantakan. Jadikan terukur.</h2>
+        <p data-i18n="pilot.description">
+          Responin dirancang untuk memulai dari satu alur kerja operasional yang fokus, melaporkan perubahan yang terjadi, lalu memperluas hanya setelah alasan bisnisnya jelas.
         </p>
         <div class="hero-section__actions">
-          <a class="button button--primary" href="mailto:hello@responin.ai?subject=Responin%20workflow%20pilot">Start a workflow pilot</a>
-          <a class="button button--secondary" href="https://github.com/psatriyo/responin-system-design" target="_blank" rel="noreferrer">Review system design</a>
+          <a class="button button--primary" href="mailto:hello@responin.ai?subject=Responin%20workflow%20pilot" data-i18n="pilot.start">Mulai pilot alur kerja</a>
+          <a class="button button--secondary" href="https://github.com/psatriyo/responin-system-design" target="_blank" rel="noreferrer" data-i18n="pilot.review">Tinjau desain sistem</a>
         </div>
       </section>
     </main>

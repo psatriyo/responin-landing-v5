@@ -79,6 +79,8 @@ summary {
 
 .brand,
 .site-nav,
+.site-header__actions,
+.language-switcher,
 .button,
 .hero-section__proof,
 .metric-card,
@@ -122,6 +124,37 @@ summary {
 
 .site-nav a:hover {
   color: var(--color-blue-700);
+}
+
+.site-header__actions {
+  gap: 0.75rem;
+}
+
+.language-switcher {
+  gap: 0.2rem;
+  padding: 0.2rem;
+  border: 1px solid rgb(82 96 120 / 0.18);
+  border-radius: 999px;
+  background: rgb(255 255 255 / 0.72);
+}
+
+.language-switcher__button {
+  min-width: 2.45rem;
+  min-height: 2.25rem;
+  border: 0;
+  border-radius: 999px;
+  color: var(--color-ink-600);
+  background: transparent;
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: 850;
+}
+
+.language-switcher__button:hover,
+.language-switcher__button--active {
+  color: var(--color-white);
+  background: var(--color-blue-700);
 }
 
 .button {
@@ -511,6 +544,10 @@ h3 {
   .site-nav,
   .site-header__cta {
     display: none;
+  }
+
+  .site-header__actions {
+    margin-left: auto;
   }
 
   .hero-section,
