@@ -4,207 +4,659 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'"
+    />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <title data-i18n-title>Responin | Agen Operasional AI untuk Tim Bisnis</title>
+    <meta
       name="description"
-      content=""
+      content="Responin adalah agen operasional AI terkelola yang memeriksa, menyusun draf, mengarahkan, menindaklanjuti, dan mengeskalasi pekerjaan bisnis berulang — dengan persetujuan manusia untuk keputusan sensitif."
       data-i18n-meta="description"
     />
-    <title data-i18n-title></title>
+    <meta name="theme-color" content="#08111f" />
+    <link rel="canonical" href="https://responin.com/" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+    <link rel="manifest" href="site.webmanifest" />
     <link rel="stylesheet" href="styles.css" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Responin" />
+    <meta property="og:url" content="https://responin.com/" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="og:title" content="Responin | Agen Operasional AI untuk Tim Bisnis" />
+    <meta
+      property="og:description"
+      content="Mulai dari satu alur kerja yang berantakan. Responin memeriksa, menyusun draf, dan mengeskalasi — keputusan sensitif tetap disetujui manusia."
+    />
+    <meta property="og:image" content="https://responin.com/assets/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://responin.com/assets/og-image.png" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Responin",
+        "url": "https://responin.com/",
+        "logo": "https://responin.com/assets/apple-touch-icon.png",
+        "email": "hello@responin.com",
+        "description": "Managed AI operations agent for business teams."
+      }
+    </script>
   </head>
   <body>
+    <a class="skip-link" href="#main" data-i18n="a11y.skip">Langsung ke konten</a>
+
     <header class="site-header">
-      <a class="brand" href="#top" aria-label="" data-i18n-attr="aria-label:brand.home">
+      <a class="brand" href="#top" aria-label="Beranda Responin" data-i18n-attr="aria-label:brand.home">
         <span class="brand__mark" aria-hidden="true">R</span>
         <span>Responin</span>
       </a>
-      <nav class="site-nav" aria-label="" data-i18n-attr="aria-label:nav.primary">
-        <a href="#workflows" data-i18n="nav.workflows"></a>
-        <a href="#process" data-i18n="nav.process"></a>
-        <a href="#trust" data-i18n="nav.trust"></a>
-        <a href="#pilot" data-i18n="nav.pilot"></a>
+      <nav class="site-nav" aria-label="Navigasi utama" data-i18n-attr="aria-label:nav.primary">
+        <a href="#workflows" data-i18n="nav.workflows">Alur kerja</a>
+        <a href="#process" data-i18n="nav.process">Cara kerja</a>
+        <a href="#trust" data-i18n="nav.trust">Kepercayaan</a>
+        <a href="#pilot" data-i18n="nav.pilot">Pilot</a>
+        <a href="#pricing" data-i18n="nav.pricing">Paket</a>
+        <a href="#faq" data-i18n="nav.faq">FAQ</a>
       </nav>
       <div class="site-header__actions">
-        <div class="language-switcher" aria-label="" data-i18n-attr="aria-label:language.label">
-          <button type="button" class="language-switcher__button" data-lang="id">ID</button>
-          <button type="button" class="language-switcher__button" data-lang="en">EN</button>
+        <div class="language-switcher" role="group" aria-label="Pilih bahasa" data-i18n-attr="aria-label:language.label">
+          <button type="button" class="language-switcher__button" data-lang="id" lang="id">ID</button>
+          <button type="button" class="language-switcher__button" data-lang="en" lang="en">EN</button>
         </div>
-        <a class="button button--primary site-header__cta" href="#pilot" data-i18n="cta.startOne"></a>
+        <a class="button button--primary site-header__cta" href="#contact" data-i18n="cta.startOne">Mulai dari satu alur kerja</a>
       </div>
     </header>
 
-    <main>
+    <main id="main">
+      <!-- HERO -->
       <section class="hero-section" id="top" aria-labelledby="hero-title">
         <div class="hero-section__content">
-          <p class="eyebrow" data-i18n="hero.eyebrow"></p>
-          <h1 id="hero-title" data-i18n="hero.title"></h1>
-          <p class="hero-section__description" data-i18n="hero.description"></p>
-          <div class="hero-section__actions" aria-label="" data-i18n-attr="aria-label:hero.actionsLabel">
-            <a class="button button--primary" href="#pilot" data-i18n="cta.startOne"></a>
-            <a class="button button--secondary" href="#process" data-i18n="cta.seeHow"></a>
+          <p class="eyebrow" data-i18n="hero.eyebrow">Agen operasional AI terkelola untuk tim bisnis</p>
+          <h1 id="hero-title" data-i18n="hero.title">Berhenti menjadi sistem operasi untuk bisnismu.</h1>
+          <p class="hero-section__description" data-i18n="hero.description">Banyak tim kehilangan berjam-jam setiap hari untuk mengecek chat, spreadsheet, dan laporan secara manual. Responin memeriksa, menyusun draf, mengarahkan, menindaklanjuti, dan mengeskalasi pekerjaan operasional berulang — sementara keputusan sensitif tetap disetujui manusia.</p>
+          <div class="hero-section__actions">
+            <a class="button button--primary" href="#contact" data-i18n="cta.startOne">Mulai dari satu alur kerja</a>
+            <a class="button button--secondary" href="#process" data-i18n="cta.seeHow">Lihat cara kerjanya</a>
           </div>
-          <ul class="hero-section__proof" aria-label="" data-i18n-attr="aria-label:hero.proofLabel">
-            <li data-i18n="hero.proof.memory"></li>
-            <li data-i18n="hero.proof.approval"></li>
-            <li data-i18n="hero.proof.audit"></li>
+          <ul class="hero-section__proof">
+            <li data-i18n="hero.proof.memory">Memori konteks bisnis</li>
+            <li data-i18n="hero.proof.approval">Persetujuan untuk aksi sensitif</li>
+            <li data-i18n="hero.proof.audit">Log audit dan kontrol penggunaan</li>
           </ul>
         </div>
 
-        <div class="hero-panel" aria-label="" data-i18n-attr="aria-label:hero.panelLabel">
-          <div class="hero-panel__bar" aria-hidden="true">
-            <span></span><span></span><span></span>
-          </div>
+        <figure class="hero-panel" aria-label="Contoh antrean operasional Responin" data-i18n-attr="aria-label:hero.panelLabel">
+          <div class="hero-panel__bar" aria-hidden="true"><span></span><span></span><span></span></div>
           <div class="hero-panel__body">
-            <p class="hero-panel__label" data-i18n="queue.label"></p>
+            <p class="hero-panel__label" data-i18n="queue.label">Antrean operasional hari ini</p>
             <div class="workflow-card workflow-card--active">
-              <span data-i18n="queue.invoice"></span>
-              <strong data-i18n="queue.needsApproval"></strong>
+              <span data-i18n="queue.invoice">Draf tindak lanjut invoice INV-1048</span>
+              <strong data-i18n="queue.needsApproval">Perlu persetujuan</strong>
             </div>
             <div class="workflow-card">
-              <span data-i18n="queue.escalation"></span>
-              <strong data-i18n="queue.routed"></strong>
+              <span data-i18n="queue.escalation">Keluhan pelanggan berulang</span>
+              <strong data-i18n="queue.routed">Diteruskan ke manajer</strong>
             </div>
             <div class="workflow-card">
-              <span data-i18n="queue.summary"></span>
-              <strong data-i18n="queue.ready"></strong>
+              <span data-i18n="queue.order">Pesanan ORD-2217 menunggu stok</span>
+              <strong data-i18n="queue.flagged">Ditandai</strong>
+            </div>
+            <div class="workflow-card">
+              <span data-i18n="queue.summary">Ringkasan bisnis harian</span>
+              <strong data-i18n="queue.ready">Siap</strong>
             </div>
           </div>
-        </div>
+          <figcaption class="hero-panel__caption" data-i18n="queue.caption">Ilustrasi. Data contoh, bukan pelanggan nyata.</figcaption>
+        </figure>
 
-        <div class="metric-strip" aria-label="" data-i18n-attr="aria-label:metrics.label">
+        <div class="metric-strip">
           <article class="metric-card">
             <strong>1</strong>
-            <span data-i18n="metrics.oneTitle"></span>
-            <p data-i18n="metrics.oneBody"></p>
+            <span data-i18n="metrics.oneTitle">alur kerja untuk memulai</span>
+            <p data-i18n="metrics.oneBody">Uji satu proses berulang, ukur nilainya, lalu kembangkan.</p>
           </article>
           <article class="metric-card">
-            <strong>24/7</strong>
-            <span data-i18n="metrics.monitoringTitle"></span>
-            <p data-i18n="metrics.monitoringBody"></p>
+            <strong data-i18n="metrics.days">30 hari</strong>
+            <span data-i18n="metrics.pilotTitle">pilot dengan cakupan jelas</span>
+            <p data-i18n="metrics.pilotBody">Nilai terukur pertama biasanya terlihat dalam 2–4 minggu untuk alur kerja yang fokus.</p>
           </article>
           <article class="metric-card">
-            <strong data-i18n="metrics.human"></strong>
-            <span data-i18n="metrics.approvalTitle"></span>
-            <p data-i18n="metrics.approvalBody"></p>
+            <strong data-i18n="metrics.human">Manusia</strong>
+            <span data-i18n="metrics.approvalTitle">menyetujui aksi sensitif</span>
+            <p data-i18n="metrics.approvalBody">Pemeriksaan terjadwal bisa berjalan di luar jam kerja; aksi ke pelanggan dan keuangan tetap menunggu persetujuan.</p>
           </article>
         </div>
       </section>
 
+      <!-- PROBLEM -->
       <section class="section" id="problems" aria-labelledby="problems-title">
         <div class="section__header">
-          <p class="eyebrow" data-i18n="problems.eyebrow"></p>
-          <h2 id="problems-title" data-i18n="problems.title"></h2>
-          <p class="section__description" data-i18n="problems.description"></p>
+          <p class="eyebrow" data-i18n="problems.eyebrow">Beban operasional</p>
+          <h2 id="problems-title" data-i18n="problems.title">Orang terbaikmu sibuk dengan pekerjaan yang paling tidak penting.</h2>
+          <p class="section__description" data-i18n="problems.description">Banyak bisnis sudah punya cukup alat. Yang kurang adalah lapisan operasional yang mengecek alat-alat itu, memahami apa yang berubah, dan menggerakkan pekerjaan rutin.</p>
         </div>
-        <div class="problem-grid">
-          <article class="card problem-card"><span>01</span><p data-i18n="problems.one"></p></article>
-          <article class="card problem-card"><span>02</span><p data-i18n="problems.two"></p></article>
-          <article class="card problem-card"><span>03</span><p data-i18n="problems.three"></p></article>
-          <article class="card problem-card"><span>04</span><p data-i18n="problems.four"></p></article>
+        <div class="grid grid--4">
+          <article class="card problem-card"><span>01</span><p data-i18n="problems.one">Pemilik dan manajer mengecek chat, dashboard, spreadsheet, dan laporan secara manual setiap hari.</p></article>
+          <article class="card problem-card"><span>02</span><p data-i18n="problems.two">Tindak lanjut pelanggan dan pembayaran tertunda karena konteksnya tersebar.</p></article>
+          <article class="card problem-card"><span>03</span><p data-i18n="problems.three">Eksekusi tim bergantung pada siapa yang ingat prosesnya.</p></article>
+          <article class="card problem-card"><span>04</span><p data-i18n="problems.four">Menambah kapasitas berarti merekrut admin baru, bukan meningkatkan daya ungkit tim.</p></article>
         </div>
-      </section>
-
-      <section class="section section--muted" id="workflows" aria-labelledby="workflows-title">
-        <div class="section__header">
-          <p class="eyebrow" data-i18n="principles.eyebrow"></p>
-          <h2 id="workflows-title" data-i18n="principles.title"></h2>
-          <p class="section__description" data-i18n="principles.description"></p>
-        </div>
-        <div class="pillar-grid">
-          <article class="card pillar-card">
-            <h3 data-i18n="principles.learnTitle"></h3>
-            <p data-i18n="principles.learnBody"></p>
-          </article>
-          <article class="card pillar-card">
-            <h3 data-i18n="principles.actTitle"></h3>
-            <p data-i18n="principles.actBody"></p>
-          </article>
-          <article class="card pillar-card">
-            <h3 data-i18n="principles.safeTitle"></h3>
-            <p data-i18n="principles.safeBody"></p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section" id="process" aria-labelledby="process-title">
-        <div class="section__header">
-          <p class="eyebrow" data-i18n="process.eyebrow"></p>
-          <h2 id="process-title" data-i18n="process.title"></h2>
-          <p class="section__description" data-i18n="process.description"></p>
-        </div>
-        <ol class="timeline">
-          <li class="timeline__item"><span>01</span><p data-i18n="process.one"></p></li>
-          <li class="timeline__item"><span>02</span><p data-i18n="process.two"></p></li>
-          <li class="timeline__item"><span>03</span><p data-i18n="process.three"></p></li>
-          <li class="timeline__item"><span>04</span><p data-i18n="process.four"></p></li>
-          <li class="timeline__item"><span>05</span><p data-i18n="process.five"></p></li>
-          <li class="timeline__item"><span>06</span><p data-i18n="process.six"></p></li>
-        </ol>
-      </section>
-
-      <section class="section section--muted" id="use-cases" aria-labelledby="use-cases-title">
-        <div class="section__header">
-          <p class="eyebrow" data-i18n="useCases.eyebrow"></p>
-          <h2 id="use-cases-title" data-i18n="useCases.title"></h2>
-          <p class="section__description" data-i18n="useCases.description"></p>
-        </div>
-        <div class="use-case-grid">
-          <article class="card use-case-card"><h3 data-i18n="useCases.summaryTitle"></h3><p data-i18n="useCases.summaryBody"></p></article>
-          <article class="card use-case-card"><h3 data-i18n="useCases.escalationTitle"></h3><p data-i18n="useCases.escalationBody"></p></article>
-          <article class="card use-case-card"><h3 data-i18n="useCases.invoiceTitle"></h3><p data-i18n="useCases.invoiceBody"></p></article>
-          <article class="card use-case-card"><h3 data-i18n="useCases.crmTitle"></h3><p data-i18n="useCases.crmBody"></p></article>
-        </div>
-      </section>
-
-      <section class="section section--dark" id="trust" aria-labelledby="trust-title">
-        <div class="section__header">
-          <p class="eyebrow" data-i18n="trust.eyebrow"></p>
-          <h2 id="trust-title" data-i18n="trust.title"></h2>
-          <p class="section__description" data-i18n="trust.description"></p>
-        </div>
-        <ul class="trust-list">
-          <li data-i18n="trust.one"></li>
-          <li data-i18n="trust.two"></li>
-          <li data-i18n="trust.three"></li>
-          <li data-i18n="trust.four"></li>
-          <li data-i18n="trust.five"></li>
+        <ul class="quote-list">
+          <li data-i18n="problems.quote1">“Saya cek spreadsheet ini setiap hari.”</li>
+          <li data-i18n="problems.quote2">“Pelanggan terus menanyakan status pesanan.”</li>
+          <li data-i18n="problems.quote3">“Pembayaran harus terus ditagih.”</li>
+          <li data-i18n="problems.quote4">“Kalau saya tidak mengingatkan tim, tidak akan jalan.”</li>
         </ul>
       </section>
 
+      <!-- PRINCIPLES -->
+      <section class="section section--muted" id="principles" aria-labelledby="principles-title">
+        <div class="section__header">
+          <p class="eyebrow" data-i18n="principles.eyebrow">Prinsip produk</p>
+          <h2 id="principles-title" data-i18n="principles.title">Pekerja operasional yang andal, bukan chatbot lain.</h2>
+          <p class="section__description" data-i18n="principles.description">Responin menjalankan alur kerja bisnis berulang dengan konteks, memori, dan aturan persetujuan.</p>
+        </div>
+        <div class="grid grid--3">
+          <article class="card pillar-card">
+            <h3 data-i18n="principles.learnTitle">Belajar, bukan sekadar menjalankan</h3>
+            <p data-i18n="principles.learnBody">Membangun memori bisnis yang berguna: orang, proses, preferensi, pengecualian berulang, dan konteks khusus tiap alur kerja — jadi kamu tidak perlu menjelaskan ulang setiap kali.</p>
+          </article>
+          <article class="card pillar-card">
+            <h3 data-i18n="principles.actTitle">Bertindak, bukan sekadar memberi saran</h3>
+            <p data-i18n="principles.actBody">Menggerakkan pekerjaan: mengecek sistem, menyusun draf balasan, menyiapkan pembaruan data, mengarahkan pengecualian, dan melaporkan hasil.</p>
+          </article>
+          <article class="card pillar-card">
+            <h3 data-i18n="principles.safeTitle">Aman, bukan sembrono</h3>
+            <p data-i18n="principles.safeBody">Aturan persetujuan, memori yang dibatasi, log audit, dan kontrol kuota memastikan otomatisasi tidak menghilangkan penilaian manusia.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- WORKFLOWS -->
+      <section class="section" id="workflows" aria-labelledby="workflows-title">
+        <div class="section__header">
+          <p class="eyebrow" data-i18n="workflows.eyebrow">Alur kerja pertama</p>
+          <h2 id="workflows-title" data-i18n="workflows.title">Mulai sempit, buktikan nilai, lalu kembangkan.</h2>
+          <p class="section__description" data-i18n="workflows.description">Alur kerja pertama terbaik itu sering terjadi, menyakitkan, terukur, dan aman dijalankan dengan persetujuan.</p>
+        </div>
+        <div class="grid grid--3">
+          <article class="card workflow-detail">
+            <h3 data-i18n="workflows.summaryTitle">Ringkasan bisnis harian</h3>
+            <p data-i18n="workflows.summaryBody">Setiap pagi mengecek sumber yang disetujui, merangkum pengecualian, hambatan, dan item jatuh tempo, lalu mengirim ringkasan singkat ke pemilik.</p>
+            <dl>
+              <dt data-i18n="workflows.controlLabel">Kontrol</dt>
+              <dd data-i18n="workflows.summaryControl">Ringkasan internal otomatis</dd>
+              <dt data-i18n="workflows.metricLabel">Diukur dari</dt>
+              <dd data-i18n="workflows.summaryMetric">Waktu cek manual yang berkurang</dd>
+            </dl>
+          </article>
+          <article class="card workflow-detail">
+            <h3 data-i18n="workflows.invoiceTitle">Draf tindak lanjut invoice dan pembayaran</h3>
+            <p data-i18n="workflows.invoiceBody">Menemukan invoice yang lewat jatuh tempo, mengambil konteks pelanggan, dan menyiapkan draf pengingat yang sopan.</p>
+            <dl>
+              <dt data-i18n="workflows.controlLabel">Kontrol</dt>
+              <dd data-i18n="workflows.invoiceControl">Draf otomatis; pengiriman perlu persetujuan</dd>
+              <dt data-i18n="workflows.metricLabel">Diukur dari</dt>
+              <dd data-i18n="workflows.invoiceMetric">Keterlambatan tindak lanjut yang berkurang</dd>
+            </dl>
+          </article>
+          <article class="card workflow-detail">
+            <h3 data-i18n="workflows.escalationTitle">Triase eskalasi pelanggan</h3>
+            <p data-i18n="workflows.escalationBody">Mendeteksi pesan mendesak, mengambil konteks pesanan atau akun, merangkum masalah, dan meneruskannya ke orang yang tepat.</p>
+            <dl>
+              <dt data-i18n="workflows.controlLabel">Kontrol</dt>
+              <dd data-i18n="workflows.escalationControl">Klasifikasi otomatis; balasan sensitif perlu persetujuan</dd>
+              <dt data-i18n="workflows.metricLabel">Diukur dari</dt>
+              <dd data-i18n="workflows.escalationMetric">Masalah mendesak terdeteksi lebih cepat</dd>
+            </dl>
+          </article>
+          <article class="card workflow-detail">
+            <h3 data-i18n="workflows.orderTitle">Pemantauan pesanan dan status</h3>
+            <p data-i18n="workflows.orderBody">Mengecek data pesanan, stok, atau pengiriman dan menandai keterlambatan sebelum pelanggan menanyakannya.</p>
+            <dl>
+              <dt data-i18n="workflows.controlLabel">Kontrol</dt>
+              <dd data-i18n="workflows.orderControl">Peringatan internal otomatis; update ke pelanggan perlu persetujuan</dd>
+              <dt data-i18n="workflows.metricLabel">Diukur dari</dt>
+              <dd data-i18n="workflows.orderMetric">Pesanan terlambat terdeteksi lebih awal</dd>
+            </dl>
+          </article>
+          <article class="card workflow-detail">
+            <h3 data-i18n="workflows.crmTitle">Asisten pembaruan CRM atau spreadsheet</h3>
+            <p data-i18n="workflows.crmBody">Mengubah percakapan yang selesai menjadi usulan pembaruan data, sehingga catatan internal tetap mutakhir.</p>
+            <dl>
+              <dt data-i18n="workflows.controlLabel">Kontrol</dt>
+              <dd data-i18n="workflows.crmControl">Tergantung kebijakan; data penting perlu persetujuan</dd>
+              <dt data-i18n="workflows.metricLabel">Diukur dari</dt>
+              <dd data-i18n="workflows.crmMetric">Data diperbarui lebih cepat</dd>
+            </dl>
+          </article>
+          <article class="card workflow-detail">
+            <h3 data-i18n="workflows.reminderTitle">Pengingat dan tindak lanjut tim</h3>
+            <p data-i18n="workflows.reminderBody">Melacak komitmen dan tugas yang terlambat, mengirim pengingat internal, dan hanya mengeskalasi bila benar-benar perlu.</p>
+            <dl>
+              <dt data-i18n="workflows.controlLabel">Kontrol</dt>
+              <dd data-i18n="workflows.reminderControl">Pengingat internal sesuai kebijakan</dd>
+              <dt data-i18n="workflows.metricLabel">Diukur dari</dt>
+              <dd data-i18n="workflows.reminderMetric">Interupsi ke manajer berkurang</dd>
+            </dl>
+          </article>
+        </div>
+      </section>
+
+      <!-- PROCESS -->
+      <section class="section section--muted" id="process" aria-labelledby="process-title">
+        <div class="section__header">
+          <p class="eyebrow" data-i18n="process.eyebrow">Cara kerja</p>
+          <h2 id="process-title" data-i18n="process.title">Dari pemicu ke aksi yang disetujui.</h2>
+          <p class="section__description" data-i18n="process.description">Responin memisahkan penalaran dari kendali sistem. AI menalar, merangkum, mengklasifikasi, dan menyusun draf. Sistem yang mengotorisasi, mengukur, mengeksekusi, dan mencatat.</p>
+        </div>
+        <div class="split">
+          <ol class="timeline">
+            <li class="timeline__item"><span>01</span><p data-i18n="process.one">Pemicu dari kanal atau jadwal</p></li>
+            <li class="timeline__item"><span>02</span><p data-i18n="process.two">Klasifikasi alur kerja dan pengambilan konteks yang dibatasi</p></li>
+            <li class="timeline__item"><span>03</span><p data-i18n="process.three">Pengecekan kebijakan, kuota, dan risiko</p></li>
+            <li class="timeline__item"><span>04</span><p data-i18n="process.four">AI menalar, merangkum, atau menyusun draf rekomendasi</p></li>
+            <li class="timeline__item"><span>05</span><p data-i18n="process.five">Persetujuan manusia bila diperlukan</p></li>
+            <li class="timeline__item"><span>06</span><p data-i18n="process.six">Eksekusi alat, log audit, dan laporan ke pelanggan</p></li>
+          </ol>
+          <div class="journey">
+            <h3 data-i18n="process.journeyTitle">Perjalanan adopsi empat minggu</h3>
+            <ol class="journey__list">
+              <li><strong data-i18n="process.week1Title">Minggu 1 — Pelajari bisnis</strong><p data-i18n="process.week1Body">Petakan pengecekan, tindak lanjut, dan pengecualian. Tentukan batas persetujuan dan metrik keberhasilan.</p></li>
+              <li><strong data-i18n="process.week2Title">Minggu 2 — Konfigurasi agen</strong><p data-i18n="process.week2Body">Hubungkan sumber yang disetujui, buat pemicu, aturan persetujuan, dan uji dengan contoh nyata.</p></li>
+              <li><strong data-i18n="process.week3Title">Minggu 3 — Luncurkan dengan kontrol</strong><p data-i18n="process.week3Body">Jalankan dalam mode persetujuan atau rekomendasi dulu, lalu sesuaikan berdasarkan masukan.</p></li>
+              <li><strong data-i18n="process.week4Title">Minggu 4 — Ukur dan kembangkan</strong><p data-i18n="process.week4Body">Laporan ROI, tinjauan hasil, dan rekomendasi alur kerja berikutnya.</p></li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <!-- TRUST -->
+      <section class="section section--dark" id="trust" aria-labelledby="trust-title">
+        <div class="section__header">
+          <p class="eyebrow" data-i18n="trust.eyebrow">Model kepercayaan</p>
+          <h2 id="trust-title" data-i18n="trust.title">Responin menangani volume. Manusia memegang keputusan.</h2>
+          <p class="section__description" data-i18n="trust.description">AI tidak memutuskan sendiri apa yang boleh dilakukan. Kebijakan platform menentukan apakah sebuah hasil boleh dieksekusi, perlu persetujuan, atau diblokir.</p>
+        </div>
+
+        <div class="table-wrap">
+          <table class="control-table">
+            <caption data-i18n="trust.tableCaption">Kontrol bawaan per jenis aksi</caption>
+            <thead>
+              <tr>
+                <th scope="col" data-i18n="trust.colAction">Aksi</th>
+                <th scope="col" data-i18n="trust.colControl">Kontrol bawaan</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td data-i18n="trust.row1Action">Merangkum item support yang belum selesai kemarin</td><td><span class="badge badge--auto" data-i18n="trust.auto">Otomatis</span></td></tr>
+              <tr><td data-i18n="trust.row2Action">Menyusun draf pengingat pembayaran</td><td><span class="badge badge--auto" data-i18n="trust.autoDraft">Draf otomatis</span></td></tr>
+              <tr><td data-i18n="trust.row3Action">Mengirim pengingat pembayaran ke pelanggan</td><td><span class="badge badge--approval" data-i18n="trust.approval">Perlu persetujuan</span></td></tr>
+              <tr><td data-i18n="trust.row4Action">Memperbarui status internal</td><td><span class="badge badge--policy" data-i18n="trust.policy">Tergantung kebijakan</span></td></tr>
+              <tr><td data-i18n="trust.row5Action">Mengubah detail penagihan pelanggan</td><td><span class="badge badge--approval" data-i18n="trust.approval">Perlu persetujuan</span></td></tr>
+              <tr><td data-i18n="trust.row6Action">Menghapus data, refund, diskon, atau mengubah syarat</td><td><span class="badge badge--restricted" data-i18n="trust.restricted">Dibatasi / risiko tinggi</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="grid grid--3 trust-grid">
+          <article class="trust-card">
+            <h3 data-i18n="trust.accessTitle">Akses data yang dibatasi</h3>
+            <p data-i18n="trust.accessBody">Agen hanya melihat sumber yang disetujui untuk alur kerja tersebut. Memori dibatasi per pelanggan, workspace, agen, dan alur kerja. Kredensial disimpan sebagai referensi rahasia, bukan teks biasa.</p>
+          </article>
+          <article class="trust-card">
+            <h3 data-i18n="trust.auditTitle">Semua tercatat</h3>
+            <p data-i18n="trust.auditBody">Pemicu, model yang dipakai, estimasi penggunaan, draf, keputusan persetujuan, aksi alat, akses operator, serta error dan retry dicatat untuk ditinjau.</p>
+          </article>
+          <article class="trust-card">
+            <h3 data-i18n="trust.controlTitle">Kamu tetap pegang kendali</h3>
+            <p data-i18n="trust.controlBody">Jeda alur kerja kapan saja, kembali ke mode draf saja, nonaktifkan satu integrasi, ubah aturan persetujuan, batasi penggunaan, dan tinjau log sebelum mengaktifkan kembali.</p>
+          </article>
+        </div>
+
+        <div class="privacy">
+          <h3 data-i18n="trust.privacyTitle">Privasi, sesuai model deployment</h3>
+          <p data-i18n="trust.privacyBody">Untuk penyedia model berbasis API yang disetujui, data pelanggan tidak seharusnya dipakai untuk melatih model publik sesuai pengaturan dan ketentuan penyedia yang dipilih. Penyedia dan model deployment didokumentasikan untuk setiap pelanggan.</p>
+          <div class="grid grid--3">
+            <div class="privacy__option">
+              <strong data-i18n="trust.managedTitle">Dikelola Responin</strong>
+              <p data-i18n="trust.managedBody">Akses terbatas, penyedia yang disetujui, log audit, dan konfigurasi khusus pelanggan. Titik awal umum untuk pilot UKM.</p>
+            </div>
+            <div class="privacy__option">
+              <strong data-i18n="trust.ownApiTitle">Akun API milik pelanggan</strong>
+              <p data-i18n="trust.ownApiBody">Pelanggan memiliki akun atau proyek penyedia model, sementara Responin mengonfigurasi lapisan alur kerja.</p>
+            </div>
+            <div class="privacy__option">
+              <strong data-i18n="trust.ownDeployTitle">Deployment milik pelanggan</strong>
+              <p data-i18n="trust.ownDeployBody">Data dapat tetap berada di infrastruktur yang dikendalikan pelanggan, tergantung penyedia model dan integrasi yang dipilih.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- COMPARISON -->
+      <section class="section" id="compare" aria-labelledby="compare-title">
+        <div class="section__header">
+          <p class="eyebrow" data-i18n="compare.eyebrow">Mengapa Responin</p>
+          <h2 id="compare-title" data-i18n="compare.title">Di antara chatbot dan otomatisasi kaku.</h2>
+          <p class="section__description" data-i18n="compare.description">ChatGPT membantu orang berpikir dan menyusun draf. Alat otomatisasi memindahkan data bersih lewat aturan tetap. Responin memahami konteks bisnis yang berantakan, menyiapkan langkah operasional berikutnya, dan meminta persetujuan saat penilaian diperlukan.</p>
+        </div>
+        <div class="table-wrap">
+          <table class="compare-table">
+            <thead>
+              <tr>
+                <th scope="col" data-i18n="compare.colAlt">Alternatif</th>
+                <th scope="col" data-i18n="compare.colGood">Cocok untuk</th>
+                <th scope="col" data-i18n="compare.colLimit">Keterbatasan</th>
+                <th scope="col" data-i18n="compare.colWhy">Kelebihan Responin</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row" data-i18n="compare.chatgpt">ChatGPT / AI chat umum</th>
+                <td data-i18n="compare.chatgptGood">Berpikir dan menyusun draf sekali pakai</td>
+                <td data-i18n="compare.chatgptLimit">Bergantung pada prompt manual; tanpa eksekusi rutin, persetujuan, atau jejak audit</td>
+                <td data-i18n="compare.chatgptWhy">Alur kerja berulang dengan memori, pemicu, persetujuan, dan log</td>
+              </tr>
+              <tr>
+                <th scope="row" data-i18n="compare.zapier">Zapier / Make</th>
+                <td data-i18n="compare.zapierGood">Otomatisasi pasti antar sistem yang rapi</td>
+                <td data-i18n="compare.zapierLimit">Rapuh saat data berantakan atau butuh penilaian</td>
+                <td data-i18n="compare.zapierWhy">Memahami bahasa alami, konteks, dan pengecualian</td>
+              </tr>
+              <tr>
+                <th scope="row" data-i18n="compare.admin">Merekrut admin baru</th>
+                <td data-i18n="compare.adminGood">Penilaian dan hubungan antarmanusia</td>
+                <td data-i18n="compare.adminLimit">Mahal, tidak konsisten, dan bertambah seiring jumlah orang</td>
+                <td data-i18n="compare.adminWhy">Memberi daya ungkit ke tim yang ada; nuansa tetap di manusia</td>
+              </tr>
+              <tr>
+                <th scope="row" data-i18n="compare.bpo">Asisten virtual / BPO</th>
+                <td data-i18n="compare.bpoGood">Eksekusi manual yang dialihdayakan</td>
+                <td data-i18n="compare.bpoLimit">Butuh pelatihan, pengawasan, dan paparan data</td>
+                <td data-i18n="compare.bpoWhy">Alur kerja terstandar dengan log dan kontrol</td>
+              </tr>
+              <tr>
+                <th scope="row" data-i18n="compare.custom">Otomatisasi kustom</th>
+                <td data-i18n="compare.customGood">Sistem yang sangat spesifik</td>
+                <td data-i18n="compare.customLimit">Lama, mahal dipelihara, sering kaku</td>
+                <td data-i18n="compare.customWhy">Mulai dari satu alur kerja ber-ROI tinggi, lalu berkembang</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- SOLUTIONS -->
+      <section class="section section--muted" id="solutions" aria-labelledby="solutions-title">
+        <div class="section__header">
+          <p class="eyebrow" data-i18n="solutions.eyebrow">Untuk industri</p>
+          <h2 id="solutions-title" data-i18n="solutions.title">Untuk bisnis yang berjalan di chat, spreadsheet, dan email.</h2>
+          <p class="section__description" data-i18n="solutions.description">Paling cocok untuk UKM Indonesia dengan 5–100 karyawan, dan tim operasional yang sedang tumbuh dengan 20–250 karyawan.</p>
+        </div>
+        <div class="grid grid--5">
+          <article class="card solution-card">
+            <h3 data-i18n="solutions.retailTitle">Ritel dan distribusi</h3>
+            <p data-i18n="solutions.retailBody">Pertanyaan pesanan, cek stok, konfirmasi pembayaran, dan update pemasok.</p>
+            <p class="solution-card__first"><span data-i18n="solutions.startWith">Mulai dengan:</span> <strong data-i18n="solutions.retailFirst">Pemantauan pesanan</strong></p>
+          </article>
+          <article class="card solution-card">
+            <h3 data-i18n="solutions.clinicTitle">Klinik dan layanan berbasis janji</h3>
+            <p data-i18n="solutions.clinicBody">Pertanyaan jadwal, pengingat, keluhan, dan perubahan janji temu.</p>
+            <p class="solution-card__first"><span data-i18n="solutions.startWith">Mulai dengan:</span> <strong data-i18n="solutions.clinicFirst">Triase eskalasi + ringkasan harian</strong></p>
+          </article>
+          <article class="card solution-card">
+            <h3 data-i18n="solutions.logisticsTitle">Logistik dan bisnis padat pesanan</h3>
+            <p data-i18n="solutions.logisticsBody">Cek dispatch, status pengiriman, permintaan ETA, dan serah terima yang terlambat.</p>
+            <p class="solution-card__first"><span data-i18n="solutions.startWith">Mulai dengan:</span> <strong data-i18n="solutions.logisticsFirst">Pemantauan status</strong></p>
+          </article>
+          <article class="card solution-card">
+            <h3 data-i18n="solutions.agencyTitle">Agensi dan jasa</h3>
+            <p data-i18n="solutions.agencyBody">Update klien, persetujuan, pengingat tenggat, dan tindak lanjut rapat.</p>
+            <p class="solution-card__first"><span data-i18n="solutions.startWith">Mulai dengan:</span> <strong data-i18n="solutions.agencyFirst">Pengingat tim + draf update klien</strong></p>
+          </article>
+          <article class="card solution-card">
+            <h3 data-i18n="solutions.financeTitle">Bisnis padat keuangan dan admin</h3>
+            <p data-i18n="solutions.financeBody">Cek invoice, pengingat pembayaran, dokumen yang kurang, dan laporan rutin.</p>
+            <p class="solution-card__first"><span data-i18n="solutions.startWith">Mulai dengan:</span> <strong data-i18n="solutions.financeFirst">Draf tindak lanjut invoice</strong></p>
+          </article>
+        </div>
+      </section>
+
+      <!-- CASE STUDY -->
+      <section class="section" id="example" aria-labelledby="example-title">
+        <div class="split split--case">
+          <div class="section__header">
+            <p class="eyebrow"><span data-i18n="example.eyebrow">Contoh ilustratif</span></p>
+            <h2 id="example-title" data-i18n="example.title">Pagi hari di distributor ritel.</h2>
+            <p class="section__description" data-i18n="example.description">Distributor dengan 20–60 karyawan menerima pesanan lewat chat dan marketplace. Setiap pagi, manajer mengecek invoice yang belum dibayar, pertanyaan status pesanan, stok yang belum dikonfirmasi, dan keluhan kemarin.</p>
+            <p class="section__description" data-i18n="example.after">Dengan Responin, satu alur kerja pagi membaca sumber yang disetujui, mengklasifikasi pengecualian, menyiapkan draf, dan meminta persetujuan untuk pesan ke pelanggan atau keuangan.</p>
+            <p class="disclaimer" data-i18n="example.disclaimer">Ini contoh model untuk menjelaskan alur kerja, bukan studi kasus pelanggan. Hasil nyata diukur selama pilot.</p>
+          </div>
+          <figure class="summary-output" aria-label="Contoh ringkasan operasional harian" data-i18n-attr="aria-label:example.outputLabel">
+            <p class="summary-output__head" data-i18n="example.outHead">Ringkasan Operasional Harian — 08:30</p>
+            <p data-i18n="example.outIntro">3 item perlu perhatian hari ini:</p>
+            <ol>
+              <li>
+                <strong data-i18n="example.out1Title">Tindak lanjut pembayaran</strong>
+                <span data-i18n="example.out1Body">INV-1048 lewat jatuh tempo 8 hari. Pelanggan biasanya membayar setelah diingatkan. Draf siap — perlu persetujuan sebelum dikirim.</span>
+              </li>
+              <li>
+                <strong data-i18n="example.out2Title">Risiko keterlambatan pesanan</strong>
+                <span data-i18n="example.out2Body">ORD-2217 menunggu konfirmasi stok. Pelanggan menanyakan jadwal kirim kemarin pukul 17:42. Saran: minta konfirmasi gudang sebelum membalas.</span>
+              </li>
+              <li>
+                <strong data-i18n="example.out3Title">Kandidat eskalasi</strong>
+                <span data-i18n="example.out3Body">Keluhan yang sama dua kali dalam 24 jam. Saran: tugaskan ke manajer operasional dan siapkan draf update.</span>
+              </li>
+            </ol>
+          </figure>
+        </div>
+      </section>
+
+      <!-- READINESS -->
+      <section class="section section--muted" id="readiness" aria-labelledby="readiness-title">
+        <div class="section__header">
+          <p class="eyebrow" data-i18n="readiness.eyebrow">Apa yang siap hari ini</p>
+          <h2 id="readiness-title" data-i18n="readiness.title">Jelas soal apa yang sudah siap.</h2>
+          <p class="section__description" data-i18n="readiness.description">Kami lebih suka jujur soal batasan daripada menjanjikan semuanya. Integrasi dipilih per pilot berdasarkan sumber data yang paling andal.</p>
+        </div>
+        <div class="grid grid--2">
+          <ul class="status-list">
+            <li><span class="badge badge--available" data-i18n="readiness.available">Tersedia</span><span data-i18n="readiness.audit">Audit alur kerja dan operasional</span></li>
+            <li><span class="badge badge--pilot" data-i18n="readiness.pilot">Siap pilot</span><span data-i18n="readiness.workflows">Ringkasan harian, tindak lanjut invoice, triase eskalasi, pemantauan pesanan, pembaruan CRM/spreadsheet</span></li>
+            <li><span class="badge badge--pilot" data-i18n="readiness.pilot">Siap pilot</span><span data-i18n="readiness.approvals">Persetujuan manusia untuk aksi sensitif</span></li>
+            <li><span class="badge badge--pilot" data-i18n="readiness.pilot">Siap pilot</span><span data-i18n="readiness.telegram">Antarmuka agen via Telegram</span></li>
+          </ul>
+          <ul class="status-list">
+            <li><span class="badge badge--roadmap" data-i18n="readiness.roadmap">Dalam roadmap</span><span data-i18n="readiness.email">Dukungan Gmail / draf email</span></li>
+            <li><span class="badge badge--roadmap" data-i18n="readiness.roadmap">Dalam roadmap</span><span data-i18n="readiness.sheets">Baca/tulis Google Sheets langsung (pilot bisa mulai dari ekspor)</span></li>
+            <li><span class="badge badge--roadmap" data-i18n="readiness.roadmap">Dalam roadmap</span><span data-i18n="readiness.whatsapp">WhatsApp Business — penyedia dan template dikonfirmasi per pilot</span></li>
+            <li><span class="badge badge--restricted" data-i18n="readiness.notSupported">Tidak didukung</span><span data-i18n="readiness.autonomous">Pesan ke pelanggan yang sepenuhnya otonom, dan penggunaan AI tanpa batas</span></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- PILOT -->
+      <section class="section" id="pilot" aria-labelledby="pilot-title">
+        <div class="section__header">
+          <p class="eyebrow" data-i18n="pilot.eyebrow">Program pilot 30 hari</p>
+          <h2 id="pilot-title" data-i18n="pilot.title">Pilih satu alur kerja yang berantakan. Jadikan terukur.</h2>
+          <p class="section__description" data-i18n="pilot.description">Pilot bukan eksperimen AI tanpa batas. Ini proyek perbaikan operasional yang fokus, dengan cakupan, pengaman, dan metrik keberhasilan yang jelas.</p>
+        </div>
+        <ol class="grid grid--4 week-list">
+          <li class="card"><span class="week-list__label" data-i18n="pilot.w1">Minggu 1</span><h3 data-i18n="pilot.w1Title">Discovery</h3><p data-i18n="pilot.w1Body">Spesifikasi alur kerja, sumber data, kebijakan persetujuan, dan baseline.</p></li>
+          <li class="card"><span class="week-list__label" data-i18n="pilot.w2">Minggu 2</span><h3 data-i18n="pilot.w2Title">Konfigurasi</h3><p data-i18n="pilot.w2Body">Kanal dan sumber terhubung, draf alur kerja, uji coba.</p></li>
+          <li class="card"><span class="week-list__label" data-i18n="pilot.w3">Minggu 3</span><h3 data-i18n="pilot.w3Title">Operasi terkendali</h3><p data-i18n="pilot.w3Body">Berjalan harian, tinjauan persetujuan, penanganan error, penyempurnaan.</p></li>
+          <li class="card"><span class="week-list__label" data-i18n="pilot.w4">Minggu 4</span><h3 data-i18n="pilot.w4Title">Ukur dan putuskan</h3><p data-i18n="pilot.w4Body">Laporan ROI dan rekomendasi: kembangkan, perbaiki, atau hentikan.</p></li>
+        </ol>
+        <div class="grid grid--2 pilot-roles">
+          <article class="card">
+            <h3 data-i18n="pilot.weProvideTitle">Yang Responin sediakan</h3>
+            <ul class="check-list">
+              <li data-i18n="pilot.we1">Discovery dan desain alur kerja</li>
+              <li data-i18n="pilot.we2">Konfigurasi agen, memori, dan konteks</li>
+              <li data-i18n="pilot.we3">Setup integrasi untuk sumber yang disetujui</li>
+              <li data-i18n="pilot.we4">Konfigurasi kebijakan persetujuan</li>
+              <li data-i18n="pilot.we5">Tinjauan dan optimasi mingguan</li>
+              <li data-i18n="pilot.we6">Laporan penggunaan, biaya, dan hasil pilot</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3 data-i18n="pilot.youProvideTitle">Yang kamu sediakan</h3>
+            <ul class="check-list">
+              <li data-i18n="pilot.you1">Satu pemilik alur kerja</li>
+              <li data-i18n="pilot.you2">Akses ke sumber yang disetujui atau data ekspor</li>
+              <li data-i18n="pilot.you3">Aturan persetujuan untuk aksi sensitif</li>
+              <li data-i18n="pilot.you4">Contoh hasil yang baik dan buruk</li>
+              <li data-i18n="pilot.you5">Masukan selama fase operasi terkendali</li>
+              <li data-i18n="pilot.you6">Tidak perlu coding</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- PRICING -->
+      <section class="section section--muted" id="pricing" aria-labelledby="pricing-title">
+        <div class="section__header">
+          <p class="eyebrow" data-i18n="pricing.eyebrow">Paket</p>
+          <h2 id="pricing-title" data-i18n="pricing.title">Harga modular untuk operasional di Indonesia.</h2>
+          <p class="section__description" data-i18n="pricing.description">Responin bukan langganan AI murah tanpa batas. Bandingkan dengan biaya menambah satu admin atau koordinator lagi. Harga ditentukan setelah konsultasi, berdasarkan alur kerja dan volume.</p>
+        </div>
+        <div class="grid grid--4 pricing-grid">
+          <article class="card price-card">
+            <h3 data-i18n="pricing.auditTitle">Audit alur kerja</h3>
+            <p class="price-card__tag" data-i18n="pricing.auditTag">Gratis untuk bisnis kecil</p>
+            <ul class="check-list">
+              <li data-i18n="pricing.audit1">Peta alur kerja</li>
+              <li data-i18n="pricing.audit2">Daftar peluang otomatisasi</li>
+              <li data-i18n="pricing.audit3">Titik persetujuan manusia</li>
+              <li data-i18n="pricing.audit4">Kebutuhan data dan integrasi</li>
+            </ul>
+          </article>
+          <article class="card price-card price-card--featured">
+            <h3 data-i18n="pricing.starterTitle">Starter Pilot</h3>
+            <p class="price-card__tag" data-i18n="pricing.starterTag">Untuk membuktikan alur kerja pertama</p>
+            <ul class="check-list">
+              <li data-i18n="pricing.starter1">1 agen, 1–3 alur kerja</li>
+              <li data-i18n="pricing.starter2">Kuota penggunaan dasar</li>
+              <li data-i18n="pricing.starter3">Alur persetujuan</li>
+              <li data-i18n="pricing.starter4">Laporan bulanan</li>
+            </ul>
+          </article>
+          <article class="card price-card">
+            <h3 data-i18n="pricing.growthTitle">Growth Operations</h3>
+            <p class="price-card__tag" data-i18n="pricing.growthTag">Untuk penggunaan operasional aktif</p>
+            <ul class="check-list">
+              <li data-i18n="pricing.growth1">1–3 agen, 2–5 alur kerja</li>
+              <li data-i18n="pricing.growth2">Kuota lebih besar</li>
+              <li data-i18n="pricing.growth3">Optimasi bulanan</li>
+              <li data-i18n="pricing.growth4">Penanganan masalah prioritas</li>
+            </ul>
+          </article>
+          <article class="card price-card">
+            <h3 data-i18n="pricing.scaleTitle">Scale / Enterprise</h3>
+            <p class="price-card__tag" data-i18n="pricing.scaleTag">Untuk tim yang lebih besar</p>
+            <ul class="check-list">
+              <li data-i18n="pricing.scale1">Banyak agen dan alur kerja kustom</li>
+              <li data-i18n="pricing.scale2">Opsi akun API milik pelanggan</li>
+              <li data-i18n="pricing.scale3">Ekspor log audit</li>
+              <li data-i18n="pricing.scale4">Tinjauan keamanan kustom</li>
+            </ul>
+          </article>
+        </div>
+        <p class="pricing-note" data-i18n="pricing.note">Semua paket memakai kuota dan pelaporan penggunaan, sehingga biaya AI tidak mengejutkan.</p>
+      </section>
+
+      <!-- FAQ -->
       <section class="section" id="faq" aria-labelledby="faq-title">
         <div class="section__header">
-          <p class="eyebrow" data-i18n="faq.eyebrow"></p>
-          <h2 id="faq-title" data-i18n="faq.title"></h2>
-          <p class="section__description" data-i18n="faq.description"></p>
+          <p class="eyebrow" data-i18n="faq.eyebrow">Pertanyaan pembeli</p>
+          <h2 id="faq-title" data-i18n="faq.title">Jawaban jelas sebelum pilot dimulai.</h2>
         </div>
         <div class="faq-list">
           <details class="faq-item">
-            <summary data-i18n="faq.chatgptQuestion"></summary>
-            <p data-i18n="faq.chatgptAnswer"></p>
+            <summary data-i18n="faq.q1">Apakah Responin hanya ChatGPT?</summary>
+            <p data-i18n="faq.a1">Bukan. Responin dikonfigurasi di sekitar alur kerja bisnis: sumber data yang disetujui, memori, integrasi, aturan persetujuan, batas penggunaan, dan pelaporan. Ini lapisan operasional yang tahu apa yang perlu dicek, kapan harus mengeskalasi, dan aksi mana yang butuh persetujuan.</p>
           </details>
           <details class="faq-item">
-            <summary data-i18n="faq.approvalQuestion"></summary>
-            <p data-i18n="faq.approvalAnswer"></p>
+            <summary data-i18n="faq.q2">Apakah Responin akan mengirim pesan ke pelanggan tanpa persetujuan?</summary>
+            <p data-i18n="faq.a2">Tidak untuk aksi sensitif atau yang terlihat pelanggan. Responin bisa menyusun draf dan memberi rekomendasi, tetapi pesan eksternal, aksi keuangan, sengketa, refund, urusan medis/hukum, dan kasus dengan keyakinan rendah memerlukan persetujuan.</p>
           </details>
           <details class="faq-item">
-            <summary data-i18n="faq.firstQuestion"></summary>
-            <p data-i18n="faq.firstAnswer"></p>
+            <summary data-i18n="faq.q3">Ke mana data kami pergi?</summary>
+            <p data-i18n="faq.a3">Tergantung model deployment. Deployment yang dikelola Responin memakai akses terbatas, penyedia yang disetujui, referensi rahasia, dan log audit. Opsi akun API atau deployment milik pelanggan memberi kontrol lebih kuat untuk perusahaan yang lebih besar. Kami menjelaskan sumber yang terhubung, penyedia yang memproses, dan apa yang dicatat.</p>
+          </details>
+          <details class="faq-item">
+            <summary data-i18n="faq.q4">Apakah Responin melatih AI dengan data kami?</summary>
+            <p data-i18n="faq.a4">Responin tidak memakai data pelanggan untuk melatih model publik. Untuk setiap deployment, kami mengonfirmasi penyedia model, kepemilikan akun, dan ketentuan pemrosesan datanya.</p>
+          </details>
+          <details class="faq-item">
+            <summary data-i18n="faq.q5">Bagaimana jika AI salah?</summary>
+            <p data-i18n="faq.a5">AI menalar, mengklasifikasi, merangkum, dan menyusun draf; platform yang mengotorisasi, mengukur, mengeksekusi, dan mencatat. Aksi berisiko tinggi memerlukan persetujuan, kasus ambigu dieskalasi, dan hasil ditinjau selama penyesuaian pilot.</p>
+          </details>
+          <details class="faq-item">
+            <summary data-i18n="faq.q6">Apakah bisa dengan WhatsApp?</summary>
+            <p data-i18n="faq.a6">WhatsApp sangat penting untuk UKM Indonesia, tetapi penyedia dan pendekatannya dipilih per deployment. Pilot awal bisa dimulai dari Telegram, email, spreadsheet, atau data ekspor sementara dukungan WhatsApp difinalisasi.</p>
+          </details>
+          <details class="faq-item">
+            <summary data-i18n="faq.q7">Berapa lama sampai terlihat hasilnya?</summary>
+            <p data-i18n="faq.a7">Pilot yang fokus menargetkan nilai terukur pertama dalam bulan pertama — biasanya 2–4 minggu. Hasil tercepat datang dari alur kerja yang sering, berulang, terukur, dan saat ini dikerjakan manual.</p>
+          </details>
+          <details class="faq-item">
+            <summary data-i18n="faq.q8">Apakah tim kami perlu kemampuan teknis?</summary>
+            <p data-i18n="faq.a8">Tidak perlu coding. Kamu cukup memberikan konteks alur kerja, akses sumber data, pemilik persetujuan, dan masukan selama penyesuaian. Responin adalah implementasi terkelola, bukan platform developer swalayan.</p>
+          </details>
+          <details class="faq-item">
+            <summary data-i18n="faq.q9">Kenapa tidak merekrut admin lagi saja?</summary>
+            <p data-i18n="faq.a9">Merekrut menambah biaya rekrutmen, onboarding, dan manajemen. Mulailah dengan alur kerja yang akan kamu berikan ke admin berikutnya, lalu uji apakah Responin bisa mengurangi beban itu sebelum menambah orang.</p>
+          </details>
+          <details class="faq-item">
+            <summary data-i18n="faq.q10">Apa yang sebaiknya diotomatisasi lebih dulu?</summary>
+            <p data-i18n="faq.a10">Sesuatu yang dicek tim setiap hari, sering diulang, dan mudah diukur: tindak lanjut invoice, pemantauan pesanan, ringkasan harian, triase eskalasi, atau pembaruan spreadsheet. Bawa satu alur kerja yang berantakan ke sesi audit.</p>
           </details>
         </div>
       </section>
 
-      <section class="pilot-cta" id="pilot" aria-labelledby="pilot-title">
-        <p class="eyebrow" data-i18n="pilot.eyebrow"></p>
-        <h2 id="pilot-title" data-i18n="pilot.title"></h2>
-        <p data-i18n="pilot.description"></p>
+      <!-- CONTACT CTA -->
+      <section class="pilot-cta" id="contact" aria-labelledby="contact-title">
+        <p class="eyebrow" data-i18n="contact.eyebrow">Mulai dari satu alur kerja</p>
+        <h2 id="contact-title" data-i18n="contact.title">Ceritakan alur kerja yang paling menguras waktu timmu.</h2>
+        <p data-i18n="contact.description">Kami akan memetakannya, menentukan apa yang aman diotomatisasi, dan mengusulkan pilot 30 hari dengan metrik yang jelas.</p>
         <div class="hero-section__actions">
-          <a class="button button--primary" href="mailto:hello@responin.ai?subject=Responin%20workflow%20pilot" data-i18n="pilot.start"></a>
-          <a class="button button--secondary" href="https://github.com/psatriyo/responin-system-design" target="_blank" rel="noreferrer" data-i18n="pilot.review"></a>
+          <a
+            class="button button--primary"
+            href="mailto:hello@responin.com?subject=Pilot%20alur%20kerja%20Responin"
+            data-i18n="contact.start"
+            data-i18n-attr="href:contact.startHref"
+          >Minta audit alur kerja</a>
+          <a
+            class="button button--secondary"
+            href="mailto:hello@responin.com?subject=Permintaan%20paket%20kepercayaan%20%26%20teknis%20Responin"
+            data-i18n="contact.trustPack"
+            data-i18n-attr="href:contact.trustPackHref"
+          >Minta paket kepercayaan &amp; teknis</a>
         </div>
+        <p class="pilot-cta__email"><span data-i18n="contact.or">Atau email langsung:</span> <a href="mailto:hello@responin.com">hello@responin.com</a></p>
       </section>
     </main>
 
-    <script src="i18n/id.js"></script>
+    <footer class="site-footer">
+      <div class="site-footer__brand">
+        <span class="brand__mark" aria-hidden="true">R</span>
+        <span>Responin</span>
+      </div>
+      <p data-i18n="footer.tagline">Responin menangani volume. Manusia memegang keputusan.</p>
+      <p class="site-footer__meta">© 2026 Responin · <a href="mailto:hello@responin.com">hello@responin.com</a></p>
+    </footer>
+
     <script src="i18n/en.js"></script>
     <script src="script.js"></script>
   </body>
