@@ -1,0 +1,11 @@
+{
+  "name": "Responin",
+  "short_name": "Responin",
+  "icons": [
+    { "src": "favicon.svg", "type": "image/svg+xml", "sizes": "any" },
+    { "src": "assets/apple-touch-icon.png", "type": "image/png", "sizes": "180x180" }
+  ],
+  "theme_color": "#08111f",
+  "background_color": "#f8fbff",
+  "display": "browser"
+}
